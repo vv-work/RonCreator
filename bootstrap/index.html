@@ -15,6 +15,31 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+  <style>
+    .typed-header {
+      font-size: 20px;
+      text-transform: uppercase;
+      overflow: hidden; /* Hide overflowing characters */
+      white-space: nowrap; /* Prevent line breaks */
+      border-right: 2px solid white; /* Add a border effect */
+      animation: typedown 2s steps(40) 1s forwards;
+    }
+
+    @keyframes typedown {
+      from {
+        width: 0;
+      }
+      to {
+        width: 90%;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var mastheadHeading = document.querySelector('.typed-header');
+      mastheadHeading.style.animationDelay = '1s'; // Delay animation start
+    });
+  </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -40,8 +65,8 @@
         <header class="masthead">
             <div class="container">
                 <!--<div class="masthead-subheading">Do you want to...</div> -->
-                <div class="masthead-heading text-uppercase">Design your own brand</div>
-                <div class="masthead-heading text-uppercase">Design your own brand</div>
+                <div class="masthead-heading text-uppercase">Do you want...</div>
+                <div class="typed-header masthead-heading text-uppercase">Design your own brand?</div>
                   <div style="text-align: center;">
                     <img src="../assets/img/icons.png" alt="Centered Image" align="center">
                   </div>
